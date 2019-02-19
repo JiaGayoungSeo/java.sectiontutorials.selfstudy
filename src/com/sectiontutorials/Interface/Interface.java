@@ -10,6 +10,7 @@ public class Interface {
 
     interface Printerable{
         void print(String doc); //interface, default is public
+        default void printCMYK(String doc){}
     }
 
     interface Printable{
@@ -36,6 +37,9 @@ public class Interface {
                 System.out.println ( "Print start" );
             }
         };
+        public void printCMYK(String doc){
+            System.out.println ( "This is default method" );
+        }
 
     }
 
