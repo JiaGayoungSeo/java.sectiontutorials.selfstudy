@@ -3,7 +3,6 @@ package com.sectiontutorials.Database;
 import java.sql.*;
 
 public class DataAccess {
-
     public static void main(String[] args){
         displayJob ();
     }
@@ -18,6 +17,7 @@ public class DataAccess {
             String quary = "select * from employee";
 
             conn = DBConnection.getConnection();
+
             pstm = conn.prepareStatement ( quary);
             rset = pstm. executeQuery ();
 
