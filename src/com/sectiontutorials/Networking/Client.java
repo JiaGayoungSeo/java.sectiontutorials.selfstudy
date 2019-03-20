@@ -36,10 +36,17 @@ public class Client {
             //3. Send that messages to the server
             output.writeObject ( messageOut );
             output.flush ();
-            
 
+            //4. Wait for an incoming String object.
+            messageIn = (String)input.readObject ();
+
+            //5. Print it to the screen.
+            System.out.println ( "SERVER SAYS: "+messageIn );
+            messageOut = keyboardInput.nextLine ();
         } catch (IOException ioe){
             System.out.println ( ioe.toString () );
+        } catch (ClassNotFoundException cnfe){
+            System.out.println ( cnfe.toString () );
         }
 
     }
