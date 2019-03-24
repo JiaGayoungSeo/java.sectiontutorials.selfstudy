@@ -20,6 +20,7 @@ public class Client {
 
     public static void main(String[] args){
         try{
+
             client = new Socket ( InetAddress.getByName ( "127.0.0.1"),12345);
 
             //1. Establish IO paths between client and server
@@ -42,7 +43,10 @@ public class Client {
 
             //5. Print it to the screen.
             System.out.println ( "SERVER SAYS: "+messageIn );
+
             messageOut = keyboardInput.nextLine ();
+
+
         } catch (IOException ioe){
             System.out.println ( ioe.toString () );
         } catch (ClassNotFoundException cnfe){

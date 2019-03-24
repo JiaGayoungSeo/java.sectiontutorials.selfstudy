@@ -1,4 +1,4 @@
-package com.sectiontutorials.scannerVSbufferedReader;
+package com.sectiontutorials.Input_Output;
 import java.util.Scanner;
 
 public class ScannerPractice {

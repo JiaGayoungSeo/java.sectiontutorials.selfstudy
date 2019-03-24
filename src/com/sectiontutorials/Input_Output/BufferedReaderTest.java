@@ -1,4 +1,4 @@
-package com.sectiontutorials.scannerVSbufferedReader;
+package com.sectiontutorials.Input_Output;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;

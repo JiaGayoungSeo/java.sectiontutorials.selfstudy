@@ -34,7 +34,6 @@ public class Server {
             //2. wait for incoming String object
             messageIn = (String)input.readObject ();
 
-            //3. Print the message to the screen.
             System.out.println ( "Client Says: "+ messageIn );
 
             //4. Wait for our server administrator (that's us) to type a response
